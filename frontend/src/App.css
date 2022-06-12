@@ -1,0 +1,39 @@
+:root{
+  --primary-color : 0,0,0 ; 
+  --secondary-color : 255,255,255 ; 
+  --third-color : 96, 90, 247 ; 
+
+}
+
+
+
+.btn{
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.btn_sample{
+  color: rgb(var(--secondary-color));
+  background: rgb(var(--third-color));
+  padding: 5px 10px;
+}
+
+.btn_raduis{
+  border-radius: 5px 0 0 5px;
+
+}
+
+
+.input{
+  border: none;
+  border-radius: 0 5px  5px 0;
+  outline: none;
+  padding: 5px 15px; 
+}
+
+.link{
+  all:unset;
+  cursor: pointer;
+}

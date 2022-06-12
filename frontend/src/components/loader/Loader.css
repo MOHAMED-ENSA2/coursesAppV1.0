@@ -1,0 +1,21 @@
+.loader{
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    border: 10px solid rgb(245, 244, 249);
+    border-top: 10px solid rgb(var(--third-color));
+    border-radius: 50%;
+    animation: loading 4s linear infinite;
+}
+
+@keyframes loading{
+    
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(3600deg);
+       
+    }
+}

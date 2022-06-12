@@ -1,0 +1,45 @@
+.email-container{
+    height: 200px; 
+    margin-top: 2rem;
+
+    background: rgb(var(--third-color));
+}
+
+.email{
+    color: rgb(var(--secondary-color));
+    height: 100%; 
+    width: 1100px; 
+    margin: 0 auto; 
+    padding: 2rem 0 ;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.email--subscribe{
+    width: 600px;
+    height: 50px;
+}
+
+.email--subscribe > button{
+    background-color: red;
+    font-size: 1.3rem;
+    width: 15%;
+    height: 100%;
+}
+
+.email--subscribe > input{
+    font-size: 1.3rem;
+    width: 85%;
+    height: 100%;
+
+}
+
+.email--subscribe > input::placeholder{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: rgb(var(--primary-color) , .4);
+}
+

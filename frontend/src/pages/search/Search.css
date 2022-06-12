@@ -1,0 +1,7 @@
+.search--searchbar{
+    width: 400px;
+    height: 50px;
+    margin: 0 auto;
+    border: .5px solid rgb(var(--primary-color) , .2);
+    border-radius: 5px 0 0 5px;
+}

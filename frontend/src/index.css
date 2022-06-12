@@ -1,0 +1,53 @@
+/* @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"; */
+
+
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px ;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Naskh Arabic', serif;
+  direction: rtl;
+  /* background: rgb(245, 244, 249); */
+
+}
+
+
+h1,h2,h3,h4,h5,h6,p,input,a{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+  font-size: 2.5rem; 
+  line-height: 1.4;
+}
+
+h2{
+  font-size: 1.8rem; 
+  line-height: 1.4;
+}
+h4{
+  font-size: 1.1; 
+  line-height: 1.4;
+}
+
+p{
+  font-size: 1rem;
+  font-weight: 400;
+  font-weight: 1.1;
+}
+
+a{
+  all: unset;
+}
+
+
+

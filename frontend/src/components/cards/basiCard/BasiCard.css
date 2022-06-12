@@ -1,0 +1,57 @@
+.basicard{
+    font-size: 1rem;
+    width: 220px;
+    height: 100px;
+    background: rgb(var(--secondary-color));
+    border: .05px solid rgb(var(--primary-color), .05);
+    border-radius: 5px;
+    padding: 15px;
+
+    box-shadow: 4px 2px 5px 0px rgba(235,235,235,0.75);
+-webkit-box-shadow: 4px 2px 5px 0px rgba(235,235,235,0.75);
+-moz-box-shadow: 4px 2px 5px 0px rgba(235,235,235,0.75);
+
+    display: flex;
+    gap: 1rem;
+    /* justify-content: space-between; */
+    align-items: center;
+
+}
+.basicard:hover{
+    /* background: rgb(var(--primary-color), .05); */
+    background: rgb(var(--third-color) , .15);
+    cursor: pointer;
+}
+
+.basicard:hover .basiCard--title{
+    color: rgb(var(--third-color));
+}
+
+.basicard:hover .basiCard--more{
+    color: rgb(var(--third-color));
+}
+
+.basicard--image{
+    padding: 14px 17px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(var(--third-color) , .15);
+}
+
+.basiCard--text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.basiCard--title{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.basiCard--more{
+    font-size: .9rem;
+    font-weight: 400;
+}

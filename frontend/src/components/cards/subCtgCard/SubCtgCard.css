@@ -1,0 +1,58 @@
+.subctgcard{
+    border: .1px solid rgb(var(--primary-color) , .1);
+    width: 325px;
+    border-radius: 3px;
+
+    box-shadow: 3px 2px 5px 0px rgba(219,219,219,0.75);
+-webkit-box-shadow: 3px 2px 5px 0px rgba(219,219,219,0.75);
+-moz-box-shadow: 3px 2px 5px 0px rgba(219,219,219,0.75);
+}
+
+.subctgcard--header{
+    padding: 1rem 2rem;
+    border-bottom: .1px solid rgb(var(--primary-color) , .1);
+
+    display: flex;
+    align-items: center;
+    gap: 1rem; 
+    
+}
+
+.subctgcard--ctg{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.subctgcard--icon{
+    font-size: 1rem;
+    background-color: rgb(var(--primary-color), .05);
+    color: rgb(var(--third-color));
+    
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subctgcard--items{
+    padding: 1rem 2.3rem;
+
+}
+
+.subctgcard--item{
+    font-size: 1rem;
+    font-weight: 300;
+
+    padding: .3rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.subctgcard--item i {
+    font-size: 1.1rem;
+    color: rgb(var(--third-color));
+
+}

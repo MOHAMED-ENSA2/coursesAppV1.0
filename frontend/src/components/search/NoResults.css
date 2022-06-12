@@ -1,0 +1,17 @@
+.noresults{
+    width: 400px;
+    height: 100px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.noresults--content{
+
+}
+/* .noresults--line{
+    background: black;
+    width: 100px;
+    height: 2px;
+} */
+

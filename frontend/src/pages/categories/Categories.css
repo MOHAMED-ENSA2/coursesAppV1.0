@@ -1,0 +1,12 @@
+.categories-container{
+    width: 100%;
+}
+
+.categories--pagination{
+    margin-bottom: 4rem;
+}
+
+.categories--filter{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,65 @@
+.herob-container{
+    background: rgb(var(--third-color) );
+    height: 480px;
+    margin: 3rem 0 ;
+}
+
+.herob{
+    color: rgb(var(--secondary-color) );
+    
+    height: 100%;
+    max-width: 1100px;
+    margin: 0 auto ;
+    padding: 2rem 0 ;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.herob--left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.herob--btn{
+    font-size: 1.25rem;
+    font-weight: 400;
+    width: 150px; 
+    height: 40px;
+}
+
+.btn_red{
+    color: rgb(var(--secondary-color) );
+    background: red;
+    margin-left: 10px;
+}
+
+.herob--items{
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+}
+
+.herob--item{
+    font-size: 1.2rem; 
+    font-weight: 400;
+
+    padding: 5px 0 ;
+    display: flex;
+    gap: 10px;
+    align-items: center;    
+}
+
+.item--icon{
+    font-size: 12px ;
+    font-weight: 300;
+    background: rgba(255,255,255,.15);
+    padding: 6px;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

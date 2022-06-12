@@ -1,0 +1,40 @@
+
+.product--content{
+    background: rgb(var(--secondary-color));
+    width: 750px;
+    padding: 1.5rem 1.4rem 2rem ;
+
+    border-radius: 5px;
+}
+
+.product--content h2{
+    margin-bottom: 1rem;
+}
+
+.product--content  h3{
+    margin: 1rem 0 ;
+}
+
+.product--content p {
+    line-height: 2;
+}
+
+/* .product--content_dowload{
+    margin-top: 1rem;
+    font-size: 1rem;
+    width: 300px;
+    height: 40px;
+
+} */
+
+.btn_torent{
+    background: red;
+    margin-right: 1rem;
+}
+
+.product--image{
+    width: 100%;
+    object-fit: cover;
+
+    border-radius: 5px;
+}

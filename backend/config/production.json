@@ -1,0 +1,9 @@
+{
+    "name" : "courses app"  , 
+    "db" : "mongodb+srv://med:0642389199@cluster0.u02ec.mongodb.net/?retryWrites=true&w=majority" , 
+    "jwtPrivateKey" : "jwtPrivateKey" 
+}
+
+
+
+

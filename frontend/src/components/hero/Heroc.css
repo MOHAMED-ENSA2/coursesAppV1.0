@@ -1,0 +1,65 @@
+.heroc-container{
+    background: rgb(var(--third-color), .25);
+    height: 350px;
+    margin: 2rem 0;
+    padding: 2rem 0 ;
+}
+.heroc{
+    width: 1100px;
+    margin: 0 auto;
+    height: 100%; 
+
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.heroc--item{
+    font-size: 1.2rem; 
+    
+    display: flex;
+    gap : 5px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heroc--icon{
+    color: rgb(var(--secondary-color));
+    background: rgb(var(--third-color));
+    font-size: 2rem;
+    width: 70px;
+    height: 70px;
+    border-radius: 5px ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroc--number{
+    font-size: 1.7rem;
+}
+
+
+@media only screen and (max-width: 1100px){
+    .heroc{
+        width: 93%;
+    }
+
+}
+
+
+@media only screen and (max-width: 700px){
+    .heroc-container{
+        background: rgb(var(--third-color), .25);
+        height: 450px;
+    }
+    .heroc{
+        display: grid;
+        grid-template-columns: auto auto ;
+        gap: 10px;
+    }
+
+}

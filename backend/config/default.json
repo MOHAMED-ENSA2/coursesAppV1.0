@@ -1,0 +1,8 @@
+{
+    "name" : "courses app"  , 
+    "db" : "mongodb+srv://med:0642389199@cluster0.u02ec.mongodb.net/?retryWrites=true&w=majority", 
+    "jwtPrivateKey" : "jwtPrivateKey" , 
+    "email" : "macinessa365@gmail.com" , 
+    "password" : "0642389199"
+
+}

@@ -1,0 +1,31 @@
+.smallcard{
+    width: 280px;
+    padding: 1rem ; 
+    border: .15px solid rgb(var(--primary-color) , .1);
+    border-radius: 5px;
+
+    display: flex;
+    gap: 10px;
+}
+
+.smallcard:hover{
+    cursor: pointer;
+    background: rgb(var(--primary-color), .1);
+}
+
+.smallcard  img{
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+.smallcard--content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.smallcard--content  p{
+    font-size: .7rem;
+    font-weight: 300;
+}
+
