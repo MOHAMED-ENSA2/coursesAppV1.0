@@ -4,8 +4,8 @@ const app = require("express")()
 require('./startup/routes')(app)
 require('./startup/db')()
 
-require('./utils/email')("elmezianimohamed45@gmail.com" , "test" , "test" )
 
+require("./startup/jobs")()
 
 const port =  process.env.PORT || 3005
 app.listen(port  , () => console.log("app listening to port " , port))

@@ -2,7 +2,11 @@
     "name" : "courses app"  , 
     "db" : "mongodb+srv://med:0642389199@cluster0.u02ec.mongodb.net/?retryWrites=true&w=majority" , 
     "jwtPrivateKey" : "jwtPrivateKey" ,
-    "email" : "macinessa365@gmail.com" , 
-    "password" : "0642389199"
+    "email" : "mohamed.elmeziani@ump.ac.ma" , 
+    "password" : "0642389199" , 
+    "clientURL" : "http://localhost:3000", 
+    "REDIS_HOSTNAME" : "redis-10971.c261.us-east-1-4.ec2.cloud.redislabs.com" ,
+    "REDIS_PORT" : "10971" ,
+    "REDIS_PASSWORD" : "NSaUZSOOYor7crH7dIOZEJIAEcXCqpjS"
 }
 

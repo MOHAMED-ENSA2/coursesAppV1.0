@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    
+    <style>
+        
+        .body{
+            background-color: rgb(244, 245, 248);
+            padding: 30px 0 ;
+        }
+
+        .container{
+            font-family: 'Gideon Roman', cursive;
+            font-family: 'Noto Naskh Arabic', serif;
+
+            background: white;
+            width: 550px;
+            margin: 20px auto;
+            padding: 25px 50px;
+            border-radius: 10px;
+            
+            text-align: center;
+
+            direction : rtl ; 
+            box-sizing: border-box;
+
+            box-shadow: 10px 5px 5px 0px rgba(205,206,207,0.75);
+            -webkit-box-shadow: 10px 5px 5px 0px rgba(205,206,207,0.75);
+            -moz-box-shadow: 10px 5px 5px 0px rgba(205,206,207,0.75);
+
+        }
+        .logo{
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            margin: 0 auto;
+        }
+        .main{
+            margin-bottom: 50px;
+        }
+
+        .main p {
+            font-weight: 400;
+            color: black;
+            font-size: 15px;
+            line-height: 2.2;
+        }
+        .product--toproducts{
+
+        }
+
+        .smallcard{
+            background-color: rgb(244, 245, 248);
+            width: 400px;
+            padding: 1rem ;
+            margin: 25px auto ; 
+            border-radius: 5px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+                   
+            box-shadow: 10px 5px 5px 0px rgba(205,206,207,0.75);
+            -webkit-box-shadow: 10px 5px 5px 0px rgba(205,206,207,0.75);
+            -moz-box-shadow: 10px 5px 5px 0px rgba(205,206,207,0.75);
+        }
+
+        .smallcard:hover{
+            cursor: pointer;
+            background: #cac9c9;
+        }
+
+        .smallcard  img{
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .content{
+            margin-right: 15px;
+        }
+        .content  p{
+            color: rgb(0,0,0,.6);
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+
+
+       
+
+        @media only screen and (max-width: 500px) {
+            .container{
+                background-color: rgb(244, 245, 248);
+                margin: 0;
+                padding: 10px;
+            }
+            .body{
+                margin: 0;
+                padding: 0;
+            }
+            .smallcard {
+                background-color: white;
+                width: 90%;
+            }
+            
+            .smallcard img{
+                height: 120px;
+            }
+
+            .logo{
+                width: 90px;
+                height: 90px;
+            }
+        }
+
+
+    </style>
+</head>
+</script>
+<body class="body">
+    <div class="container">
+        <img src="https://i.ibb.co/ZGDZZHc/logo.png" alt="logo" class="logo">
+        <div class="main">
+            <p>
+                يقدم لك موقع تحميل آلاف الدورات والكتب المدفوعة مجانا. لا تتردد في زياراة موقعنا بشكل متواصل حيث نضيف يوميا أهم وأحدث الدورات التي يقدمها النخبة عبر العالم. في مايلي آخر الإضافات
+            </p>
+
+        </div>
+        
+        <div class='product--toproducts'>
+            {{#each products}}
+                <a class='smallcard' href = {{link}} style="text-decoration: none ; color: black;">
+                    <div class="image">
+                        <img src={{image}} alt="" style="margin-top: 8%;" />
+                    </div>
+                    <div class='content' >
+                        <h3>{{name}}</h3>
+                        <p>
+                        {{shortDesc}}
+                        </p>
+                    </div>
+                </a>
+            {{/each}}
+        </div>
+    </div>
+
+</body>
+</html>
