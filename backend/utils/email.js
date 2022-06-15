@@ -3,14 +3,13 @@ var Handlebars = require('handlebars');
 const fs = require("fs")
 
 const Product = require("../models/product")
-const config = require('config')
 
 
 module.exports  = async function (dist, subject ){
 
     // handlebars template config
     Handlebars.registerHelper('link', function () {
-        return  config.get("clientURL") + "/product/" + this._id
+        return  process.env.clientURL + "/product/" + this._id
     })
 
     // get latest products from mongoDB database
@@ -38,8 +37,8 @@ module.exports  = async function (dist, subject ){
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: config.get("email"),
-        pass:  config.get("password")
+        user: process.env.email , 
+        pass:  process.env.password
       }
     });
     
@@ -52,7 +51,7 @@ module.exports  = async function (dist, subject ){
       var htmlToSend = template(data);
 
       const mailOptions = {
-          from: config.get("email"),
+          from: process.env.email,
           to: dist,
           subject: subject || "",
           html : htmlToSend

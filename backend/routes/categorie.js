@@ -8,8 +8,9 @@ router.get("/get/:id" , getCategorie)
 router.post("/add" , addCategorie)
 router.put("/update/:id" , updateCategorie)
 router.delete("/delete/:id" , deleteCategorie)
-router.get("/subs" , cache("allCategorieSubs") ,getallSubCategories)
-router.get("/subs/:id" , cache("categorieSubs") ,getSubCategorie)
-router.get("/products/:id" , cache("categorieProducts") ,getCategorieProducts)
+router.get("/subs" , cache("allCategorieSubs") , getallSubCategories)
+router.get("/subs/:id"  ,getSubCategorie)
+router.get("/products/:id"  ,getCategorieProducts)
 
 module.exports = router
+

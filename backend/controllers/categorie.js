@@ -90,7 +90,6 @@ const getSubCategorie = async (req, res, next) => {
     try {
         const subCategories = await SubCategorie.find({categorie : id})
         
-        storeCache("categorieSubs", subCategories )
         res.send(subCategories)
     } catch (error) {
         next(error)
@@ -127,10 +126,9 @@ const getCategorieProducts =  async (req,res, next) => {
     const {id} = req.params
 
     try{
-        const products = await Product.find().or([{categorie : id} , {subCategorie : id}] )
+        const products = await Product.find().or([{categorie : id} , {subCategorie : id}] ).populate("categorie" , "name").populate("subCategorie" , "name")
         if(!products)
             return res.status(404).send("there is no product with the giving id!")
-        storeCache("categorieProducts", products)    
         res.send(products)
     }
     catch(error){   

@@ -27,7 +27,7 @@ function AllProducts({data}) {
             <Filter filtredProducts = {data} products = {products} setProducts  = {setProducts}  setPage = {setPage}  />
           </div>
           <div className='allproducts--content'>
-            { products.slice((page - 1)*pageSize ,(page - 1)*pageSize + pageSize ).map((elm,index)=> <ProductCard key = {index} data = {elm }  /> )}
+            { products.slice((page - 1)*pageSize ,(page - 1)*pageSize + pageSize ).map((elm,index)=> <ProductCard key = {index} data = {elm}  /> )}
           </div>
           <div className='allproducts--pagination'>
             <Pagination nbPage = {numberOfPages} setPage = {setPage} />

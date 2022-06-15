@@ -1,7 +1,7 @@
 .productcard{
     width: 310px;
-    height: 350px;
-    padding: 10px 15px;
+    height: 360px;
+    padding: 1rem 15px;
 
     border: .05px solid rgb(var(--primary-color), .05);
     border-radius: 5px;

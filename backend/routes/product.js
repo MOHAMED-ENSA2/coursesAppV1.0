@@ -4,7 +4,7 @@ const {getProducts, getProduct , addProduct , updateProduct,deleteProduct, getLa
 const cache = require('../middlewares/cache')
 
 router.get("/" , cache("products") , getProducts )
-router.get("/getProduct/:id" , cache("product") , getProduct)
+router.get("/getProduct/:id" , getProduct)
 router.post("/add" , addProduct)
 router.put("/update/:id" , updateProduct)
 router.delete("/delete/:id" , deleteProduct)

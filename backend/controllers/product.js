@@ -29,7 +29,6 @@ const getProduct =  async (req,res, next) => {
         if(!product)
             return res.status(404).send("there is no product with the giving id!")
             
-        storeCache("product" , product)                 
         res.send(product)
     }
     catch(error){   

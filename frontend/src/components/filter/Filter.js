@@ -49,7 +49,7 @@ function Filter({data , setPage , setProducts, filtredProducts}) {
   }
 
   const handleFiltering = (key , value) => {
-    console.log({[key] : value})
+
     let productsClone = [...filtredProducts]
     
     if(key  === "categorie"){

@@ -4,11 +4,10 @@ import {Link} from "react-router-dom"
 import "./ProductCard.css"
 
 function ProductCard({data}) {
-  const {_id ,name,image , shortDesc} = data || {name : "" , image : "https://img-b.udemycdn.com/course/750x422/1366270_7e59_9.jpg"  , shortDesc : ""}
-
+  const {_id ,name,image , shortDesc} = data 
   return (
     <Link to = {"/product/" + _id} className='link productcard'>
-        <img className='productcard--img' src={ image || "https://img-b.udemycdn.com/course/750x422/1366270_7e59_9.jpg" } alt="" />
+        <img className='productcard--img' src={ image} alt="" />
         <div className='productcard--content'>
           <h4 className='productcard--title'>
               {name} 

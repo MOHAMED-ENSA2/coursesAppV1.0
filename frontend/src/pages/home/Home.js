@@ -1,6 +1,5 @@
 import React from 'react'
 
-import withApiRequest from '../../components/HOC/withApiRequest'
 import BasiCard from '../../components/cards/basiCard/BasiCard'
 import ProductCard from '../../components/cards/productCard/ProductCard'
 import Email from '../../components/email/Email'
@@ -10,7 +9,7 @@ import Heroc from '../../components/hero/Heroc'
 import Section from '../../components/section/Section'
 import "./Home.css"
 
-function Home({data}) {
+function Home() {
 
   return (
     <div className='home-container'>

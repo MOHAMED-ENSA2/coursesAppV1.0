@@ -1,0 +1,23 @@
+.alert{
+    font-size: 1rem;
+    color: white;
+    background: #04AA6D;
+
+    max-width: 400px;
+    padding: .65rem 1rem;
+    margin: 2rem auto;
+
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 5px;
+
+
+}
+
+.alert i{
+    cursor: pointer;
+    font-size: .8rem;
+
+}

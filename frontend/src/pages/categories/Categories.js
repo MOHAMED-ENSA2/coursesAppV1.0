@@ -4,9 +4,7 @@ import { useParams } from 'react-router-dom'
 import http from '../../services/http'
 import configData from "../../config/configData.json"
 import CategorieProducts from '../../components/categories/categorieProducts/CategorieProducts'
-import Filter from '../../components/filter/Filter'
 import Header from '../../components/header/Header'
-import Pagination from '../../components/pagination/Pagination'
 
 import './Categories.css'
 
@@ -23,16 +21,11 @@ function Categories() {
   return (
     <div className='categories-container'>
         <Header title={"جميع الدورات والكتب لقسم " + title}/>
-        <div className='categories--filter'>
-          <Filter/>
-        </div>
-          <CategorieProducts/>
-        <div className='categories--pagination'>
-          <Pagination/>
-        </div>
+        <CategorieProducts/>  
     </div>
   )
 }
+
 
 
 export default Categories
